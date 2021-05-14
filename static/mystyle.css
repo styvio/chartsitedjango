@@ -1,0 +1,108 @@
+* {
+    font-family: var(--primary-font), sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.overallHeader{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: Bahnschrift;
+    color: #000;
+    font-size: 36px;
+}
+
+.tickerHeader{
+    margin-left: 50px;
+    font-family: Bahnschrift;
+    color: #00768B;
+    font-size: 36px;
+}
+
+.customeHeader{
+    font-family: Bahnschrift;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.buttonArea{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.changerButton{
+    font-family: Bahnschrift;
+    color: #000;
+    font-weight: 450;
+    margin-left: 10px;
+    display: inline;
+}
+
+.customStockChart{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+.newContainerSearchWidget {
+    margin-top: 15px;
+    font-family: Bahnschrift;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .newContainerSearchWidget .searchbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 53px;
+    transition: 0.4s linear;
+    overflow: hidden;
+  }
+  .newContainerSearchWidget .searchbox .searchbox__input {
+    display: block;
+    appearance: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: #0cffff;
+    padding: 15px;
+    color: #24233A;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s linear;
+  }
+  .newContainerSearchWidget .searchbox .searchbox__input::placeholder {
+    color: rgba(0, 0, 0, 0.0);
+  }
+  .newContainerSearchWidget .searchbox .searchbox__icon {
+    position: absolute;
+    right: calc(53px / 2);
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+  .newContainerSearchWidget .searchbox .searchbox__icon path {
+    fill: #00F494;
+    transition: 0.4s linear;
+  }
+  .newContainerSearchWidget .searchbox:focus-within {
+    max-width: 300px;
+  }
+  .newContainerSearchWidget .searchbox:focus-within .searchbox__input {
+    background-color: #FFF;
+    padding-right: 50px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+  .newContainerSearchWidget .searchbox:focus-within .searchbox__icon path {
+    fill: #24233A;
+  }
